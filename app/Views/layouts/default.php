@@ -8,7 +8,7 @@
 </head>
 <body>
     <nav>
-        <a href="<?= url_to('/') ?>"> Home </a>
+        <a href="<?= url_to('/') ?>"> Test di DEV </a>
         <?php if(auth()->loggedIn()): ?>
             Hello, <?=esc(auth()->user()->first_name)?>
             <a href="<?= url_to("articles")?>">Articles</a>
@@ -17,7 +17,7 @@
             <?php endif; ?>
             <a href="<?= url_to("logout")?>">Log out</a>
         <?php else: ?>
-            <a href="<?= url_to("login")?>">Login</a>
+            <a href="<?= url_to("login")?>">Test</a>
         <?php endif; ?>
     </nav>
 
